@@ -1,0 +1,18 @@
+Code Explanation:
+Imported Packages:
+
+fmt: To display messages on the console.
+net/http: To handle HTTP requests.
+Handler:
+
+The handler function is called every time a request is made to the server. It writes "Hello, World!" to the response.
+Server:
+
+http.HandleFunc("/") associates the handler function with the path /.
+http.ListenAndServe(":8080", nil) starts the server on port 8080.
+
+How to Run:
+Save the code in a file called main.go.
+In the terminal, run:
+go run main.go
+Go to http://localhost:8080 in your browser to see the result.
